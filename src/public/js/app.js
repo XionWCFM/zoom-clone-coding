@@ -33,7 +33,6 @@ function handleSubmit(event) {
     const input = messageForm.querySelector("input")
     socket.send(makeMessage("new_message" , input.value));
     input.value = "";
-
 }
 
 function handleNickSubmit(event) {
