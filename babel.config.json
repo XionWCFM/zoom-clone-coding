@@ -1,0 +1,5 @@
+{
+    "presets": ["@babel/preset-env"]
+    
+}
+//presets은 babel에 대한 사전설정을 의미하고 @babel/preset-env는 es6이후 자바스크립트 모든 기능을 컴파일 할 수 있도록 설정한 옵션입니다.
