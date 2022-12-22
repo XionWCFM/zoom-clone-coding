@@ -42,6 +42,30 @@ import와 express를 이용해 express를 가져올 수 있음
 **npm i ws**
 ws란 ? 웹소켓의 규칙에 맞게 구현한 핵심 기능을 제공하는 패키지
 
+**socket.io**
+웹소켓을 활용하는 라이브러리
+실시간, 양방향, 이벤트에 기반한 통신을 지원해줌
+http://localhost:3000/socket.io/socket.io.js
+socket.io의 소스코드를 제공해줌
+
+socket.io를 이용하면
+websocket을 지원해주지않는 경우에도 사용가능하게할 수 있음
+재연결 기능 or websocket 지원없을시 다른 기능 이용이 가능해짐
+
+socket.send -> socket.emit
+message -> reply
+connection -> connection
+
+socket.io 를 브라우저에 설치시켜야 사용가능
+
+sockets.push(socket)을 할 필요없이
+모든 소켓을 map으로 저장해줌
+채팅룸을 구분할 수 있는 기능이 내장되어 있음
+
+emit을 통해 객체도 전달가능 (websocket의 send는 이진데이터, 문자열만 전달가능했음)
+app -> server과정에서 이벤트명을 임의로 지정가능함
+심지어 콜백함수도 전달가능함
+
 <br/>
 <br/>
 <br/>
